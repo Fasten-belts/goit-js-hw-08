@@ -10,7 +10,6 @@ formFeedback.addEventListener('input', throttle(saveFormState, 500));
 
 window.addEventListener('DOMContentLoaded', () => {
   fillFormFields();
-  formFeedback.classList.add('loaded');
 });
 
 formFeedback.addEventListener('submit', clearFormState);
