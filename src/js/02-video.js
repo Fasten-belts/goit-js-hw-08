@@ -10,12 +10,12 @@ const initialTime = localStorage.getItem('videoplayer-current-time');
 function onTimeUpdate(data) {
   const currentTime = data.seconds;
 
-  localStorage.setItem('videoplayer-current-time', currentTime.toString());
+  localStorage.setItem('videoplayer-current-time', currentTime);
 }
 
 function initializePlayer() {
   if (initialTime) {
-    player.setCurrentTime(parseFloat(initialTime));
+    player.setCurrentTime(initialTime);
   }
   // console.log(typeof parseFloat(initialTime), parseFloat(initialTime));
 
