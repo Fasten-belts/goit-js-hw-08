@@ -8,9 +8,7 @@ const messageInput = formFeedback.querySelector('textarea[name="message"]');
 
 formFeedback.addEventListener('input', throttle(saveFormState, 500));
 
-window.addEventListener('DOMContentLoaded', () => {
-  fillFormFields();
-});
+window.addEventListener('DOMContentLoaded', fillFormFields());
 
 formFeedback.addEventListener('submit', clearFormState);
 
